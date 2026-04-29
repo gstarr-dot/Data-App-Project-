@@ -23,6 +23,7 @@ st.title("Spending Tracker") # Tittle for page
 
 st.header("Add New Spending") # Subheader  
 
+#User enters amount, data, and selects category 
 amount = st.number_input("Amount", min_value=0.01, step=0.01)
 category = st.selectbox("Category", ["Food", "Transportation", "Entertainment/Subscriptions", "Other"])
 date = st.date_input("Date")
