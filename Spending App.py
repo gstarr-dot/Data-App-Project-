@@ -38,9 +38,9 @@ if page == "Home":
         data =load_data() 
 
         new_expense = {
-        "amount": amount,
-        "category": category,
-        "date": str(date)
+            "amount": amount,
+            "category": category,
+            "date": str(date)
         }
 
         data.append(new_expense)
@@ -72,9 +72,25 @@ if page == "Home":
             chart_type = st.selectbox("Select Chart", ["Bar Chart", "Pie Chart"])
 
             #Bar chart 
-            elif chart_type == "Bar Chart":
+            if chart_type == "Bar Chart":
                 st.subheader("Bar Chart for Spending by Category")
                 st.bar_char(category_totals)
+
+            #Pie Chart
+            elif chart_type == "Pie Chart":
+                st.subheader("Pie Chart for Spending by Category")
+
+                fig, ax = plt.subplots()
+                ax.pie(
+                    category_totals, 
+                    labels=category_totals.index,
+                    autopct="%1.1f%%"
+                )
+
+                ax.axis("equal")
+
+                st.pyplot(fig)
+                   
                       
                       
                         
