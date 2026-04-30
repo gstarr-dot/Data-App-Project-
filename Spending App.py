@@ -60,6 +60,12 @@ if page == "Home":
     elif page == "Charts": 
         st.title("Spending Charts")
         data = load_data() 
+
+        if not data:
+            st.write("No Inputs - Input Data to create visuals.")
+        else: 
+            df = pd.DataFrame(data)
+        
                  
 
 
