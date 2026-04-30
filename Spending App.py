@@ -68,6 +68,9 @@ if page == "Home":
 
             #Groups the data
             category_totals = df.groupby("category")["amount"].sum()
+
+            chart_type = st.selectbox("Select Chart", ["Bar Chart", "Pie Chart"])
+                      
                         
         
                  
