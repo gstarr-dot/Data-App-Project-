@@ -56,4 +56,10 @@ if page == "Home":
     else:
         st.write("No spending data available.")
 
+    #Add page for charts
+    elif page == "Charts": 
+        st.title("Spending Charts")
+        data = load_data() 
+                 
+
 
