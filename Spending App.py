@@ -70,6 +70,12 @@ if page == "Home":
             category_totals = df.groupby("category")["amount"].sum()
 
             chart_type = st.selectbox("Select Chart", ["Bar Chart", "Pie Chart"])
+
+            #Bar chart 
+            elif chart_type == "Bar Chart":
+                st.subheader("Bar Chart for Spending by Category")
+                st.bar_char(category_totals)
+                      
                       
                         
         
