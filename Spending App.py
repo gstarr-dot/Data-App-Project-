@@ -65,6 +65,10 @@ if page == "Home":
             st.write("No Inputs - Input Data to create visuals.")
         else: 
             df = pd.DataFrame(data)
+
+            #Groups the data
+            category_totals = df.groupby("category")["amount"].sum()
+                        
         
                  
 
