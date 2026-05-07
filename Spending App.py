@@ -61,6 +61,11 @@ if page == "Home":
 
     #apply filters
     filtered_df = df.copy()
+
+    if selected_category != "All":
+        filtered_df = filtered_df[
+            filtered_df["category"] == selected_category
+        ]
     
 
     data = load_data()
