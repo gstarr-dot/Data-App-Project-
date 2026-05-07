@@ -61,7 +61,7 @@ if page == "Home":
         min_amount = st.slider(
             "Minimum Amount",
             0.0, 
-            float(df["amount"].max())
+            float(df["amount"].max()),
             0.0
             )
 
