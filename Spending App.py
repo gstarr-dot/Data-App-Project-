@@ -44,43 +44,41 @@ if page == "Home":
         save_data(data)
         st.success("Saved!")
 
-    #Show all saved and new spending 
+    #Load all saved and new spending 
     st.header("All Spending")
 
-    selected_category = st.selectbox(
-        "Filter by Category",
-        ["All"] + list(df["category"].unique())
-    )
-
-    min_amount = st.slider(
-        "Minimum Amount",
-        0.0, 
-        float(df["amount".max())
-        0.0
-    )
-
-    #apply filters
-    filtered_df = df.copy()
-
-    if selected_category != "All":
-        filtered_df = filtered_df[
-            filtered_df["category"] == selected_category
-        ]
-
-    filtered_df = filtered_df[
-        filtered_df["amount"]>= min_amount
-    ]
-
-    #display data with filter
-    st.dataframe(filtered_df)
-    
-
     data = load_data()
+
     if data:
         df = pd.DataFrame(data)
-        st.dataframe(df)
-        #Filters Subheader
         st.subheader("Filters")
+        
+        selected_category = st.selectbox(
+        "Filter by Category",
+        ["All"] + list(df["category"].unique())
+        )
+
+        min_amount = st.slider(
+            "Minimum Amount",
+            0.0, 
+            float(df["amount".max())
+            0.0
+            )
+
+        #apply filters
+        filtered_df = df.copy()
+
+        if selected_category != "All":
+            filtered_df = filtered_df[
+                filtered_df["category"] == selected_category
+            ]
+
+        filtered_df = filtered_df[
+            filtered_df["amount"]>= min_amount
+        ]
+
+        #display data with filter
+        st.dataframe(filtered_df)
         
         #Delete entries subheader
         st.subheader("Delete Entries")
