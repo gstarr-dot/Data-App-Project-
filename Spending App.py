@@ -24,7 +24,6 @@ page = st.sidebar.selectbox("Navigation", ["Home", "Charts"])
 if page == "Home":
 
     st.title("Spending Tracker") # Tittle for page
-
     st.header("Add New Spending") # Subheader  
 
     #User enters amount, data, and selects category 
@@ -43,6 +42,7 @@ if page == "Home":
 
         data.append(new_expense)
         save_data(data)
+        st.success("Saved!")
 
     #Show all saved and new spending 
     st.header("All Spending")
