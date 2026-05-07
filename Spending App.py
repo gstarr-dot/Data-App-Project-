@@ -66,6 +66,10 @@ if page == "Home":
         filtered_df = filtered_df[
             filtered_df["category"] == selected_category
         ]
+
+    filtered_df = filtered_df[
+        filtered_df["amount"]>= min_amount
+    ]
     
 
     data = load_data()
