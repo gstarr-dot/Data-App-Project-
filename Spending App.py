@@ -70,6 +70,9 @@ if page == "Home":
     filtered_df = filtered_df[
         filtered_df["amount"]>= min_amount
     ]
+
+    #display data with filter
+    st.dataframe(filtered_df)
     
 
     data = load_data()
