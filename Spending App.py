@@ -2,6 +2,7 @@ import streamlit as st
 import json 
 import os 
 import pandas as pd 
+import matplotlib.pyplot as plt 
 
 File = "spending.json"
 
@@ -23,7 +24,7 @@ def save_data(data):   #saves spending data
 page = st.sidebar.selectbox("Navigation", ["Home", "Charts])
 
 #home page 
-if page == "Home":
+if page == "Add Spending":
 
     st.title("Spending Tracker") # Tittle for page
 
@@ -56,40 +57,40 @@ if page == "Home":
     else:
         st.write("No spending data available.")
 
-    #Add page for charts
-    elif page == "Charts": 
-        st.title("Spending Charts")
-        data = load_data() 
+#Add page for charts
+elif page == "Charts": 
+    st.title("Spending Charts")
+    data = load_data() 
 
-        if not data:
-            st.write("No Inputs - Input Data to create visuals.")
-        else: 
-            df = pd.DataFrame(data)
+    if not data:
+        st.write("No Inputs - Input Data to create visuals.")
+    else: 
+        df = pd.DataFrame(data)
 
-            #Groups the data
-            category_totals = df.groupby("category")["amount"].sum()
+        #Groups the data
+        category_totals = df.groupby("category")["amount"].sum()
 
-            chart_type = st.selectbox("Select Chart", ["Bar Chart", "Pie Chart"])
+        chart_type = st.selectbox("Select Chart", ["Bar Chart", "Pie Chart"])
 
-            #Bar chart 
-            if chart_type == "Bar Chart":
-                st.subheader("Bar Chart for Spending by Category")
-                st.bar_char(category_totals)
+        #Bar chart 
+        if chart_type == "Bar Chart":
+            st.subheader("Bar Chart for Spending by Category")
+            st.bar_char(category_totals)
 
-            #Pie Chart
-            elif chart_type == "Pie Chart":
-                st.subheader("Pie Chart for Spending by Category")
+        #Pie Chart
+        elif chart_type == "Pie Chart":
+            st.subheader("Pie Chart for Spending by Category")
 
-                fig, ax = plt.subplots()
-                ax.pie(
-                    category_totals, 
-                    labels=category_totals.index,
-                    autopct="%1.1f%%"
-                )
+            fig, ax = plt.subplots()
+            ax.pie(
+                category_totals, 
+                labels=category_totals.index,
+                autopct="%1.1f%%"
+            )
 
-                ax.axis("equal")
+            ax.axis("equal")
 
-                st.pyplot(fig)
+            st.pyplot(fig)
                    
                       
                       
