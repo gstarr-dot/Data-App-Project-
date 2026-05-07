@@ -85,13 +85,13 @@ if page == "Home":
 
         budget = st.number_input(
             "Set Monthly Budget",
-            min_value=0.0
+            min_value=0.0,
             step=10.0
         )
 
         spent = df["amount"].sum()
 
-        st.write(f"You spen ${spent.2f} of ${budget:.2f}")
+        st.write(f"You spent ${spent.2f} of ${budget:.2f}")
 
         if budget > 0:
             st.progress(min(spent / budget, 1.0))
