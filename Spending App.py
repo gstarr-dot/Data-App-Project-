@@ -79,6 +79,9 @@ if page == "Home":
 
         #display data with filter
         st.dataframe(filtered_df)
+
+        #Budget Tracker 
+        st.subheader("Budget Tracker")
         
         #Delete entries subheader
         st.subheader("Delete Entries")
