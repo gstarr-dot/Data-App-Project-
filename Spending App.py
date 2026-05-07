@@ -16,9 +16,6 @@ def save_data(data):   #saves spending data
     with open(File, "w") as f:
         json.dump(data, f)
 
-def save_data(data):   #saves spending data
-    with open(File, "w") as f:
-        json.dump(data, f)
 
 #add sidebar menu 
 page = st.sidebar.selectbox("Navigation", ["Home", "Charts"])
