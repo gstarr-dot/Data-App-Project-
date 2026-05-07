@@ -47,6 +47,11 @@ if page == "Home":
     #Show all saved and new spending 
     st.header("All Spending")
 
+    selected_category = st.selectbox(
+        "Filter by Category",
+        ["All"] + list(df["category"].unique())
+    )
+
     data = load_data()
     if data:
         df = pd.DataFrame(data)
