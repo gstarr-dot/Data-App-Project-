@@ -58,6 +58,8 @@ if page == "Home":
                 f"{expense['category']} | "
                 f"${expense['amount']}"
             )
+            if st.button(f"Delete Entry {i}"):
+                
     else:
         st.write("No spending data available.")
 
