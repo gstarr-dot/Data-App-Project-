@@ -82,6 +82,19 @@ if page == "Home":
 
         #Budget Tracker 
         st.subheader("Budget Tracker")
+
+        budget = st.number_input(
+            "Set Monthly Budget",
+            min_value=0.0
+            step=10.0
+        )
+
+        spent = df["amount"].sum()
+
+        st.write(f"You spen ${spent.2f} of ${budget:.2f}")
+
+        if budget > 0:
+            st.progress(min(spent / budget, 1.0))
         
         #Delete entries subheader
         st.subheader("Delete Entries")
