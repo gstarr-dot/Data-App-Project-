@@ -51,6 +51,9 @@ if page == "Home":
     if data:
         df = pd.DataFrame(data)
         st.dataframe(df)
+        #Filters Subheader
+        
+        #Delete entries subheader
         st.subheader("Delete Entries")
         for i, expense in enumerate(data):
             st.write(
