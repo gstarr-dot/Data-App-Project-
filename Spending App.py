@@ -51,6 +51,13 @@ if page == "Home":
     if data:
         df = pd.DataFrame(data)
         st.dataframe(df)
+        st.subheader("Delete Entries")
+        for i, expense in enumerate(data):
+            st.write(
+                f"{expense['data']} | "
+                f"{expense['category']} | "
+                f"${expense['amount']}"
+            )
     else:
         st.write("No spending data available.")
 
