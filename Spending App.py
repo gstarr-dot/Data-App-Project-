@@ -52,6 +52,7 @@ if page == "Home":
         df = pd.DataFrame(data)
         st.dataframe(df)
         #Filters Subheader
+        st.subheader("Filters")
         
         #Delete entries subheader
         st.subheader("Delete Entries")
