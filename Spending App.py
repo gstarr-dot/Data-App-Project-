@@ -24,7 +24,7 @@ def save_data(data):   #saves spending data
 page = st.sidebar.selectbox("Navigation", ["Home", "Charts"])
 
 #home page 
-if page == "Add Spending":
+if page == "Home":
 
     st.title("Spending Tracker") # Tittle for page
 
