@@ -52,6 +52,8 @@ if page == "Home":
         ["All"] + list(df["category"].unique())
     )
 
+    min_amount = st.slider(
+
     data = load_data()
     if data:
         df = pd.DataFrame(data)
