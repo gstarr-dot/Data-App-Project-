@@ -54,7 +54,7 @@ if page == "Home":
         st.subheader("Delete Entries")
         for i, expense in enumerate(data):
             st.write(
-                f"{expense['data']} | "
+                f"{expense['date']} | "
                 f"{expense['category']} | "
                 f"${expense['amount']}"
             )
