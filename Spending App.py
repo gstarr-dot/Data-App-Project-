@@ -21,7 +21,7 @@ def save_data(data):   #saves spending data
         json.dump(data, f)
 
 #add sidebar menu 
-page = st.sidebar.selectbox("Navigation", ["Home", "Charts])
+page = st.sidebar.selectbox("Navigation", ["Home", "Charts"])
 
 #home page 
 if page == "Add Spending":
