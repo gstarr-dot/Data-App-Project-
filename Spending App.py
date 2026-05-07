@@ -91,7 +91,7 @@ if page == "Home":
 
         spent = df["amount"].sum()
 
-        st.write(f"You spent ${spent.2f} of ${budget:.2f}")
+        st.write(f"You spent ${spent:.2f} of ${budget:.2f}")
 
         if budget > 0:
             st.progress(min(spent / budget, 1.0))
