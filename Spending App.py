@@ -59,6 +59,10 @@ if page == "Home":
         0.0
     )
 
+    #apply filters
+    filtered_df = df.copy()
+    
+
     data = load_data()
     if data:
         df = pd.DataFrame(data)
