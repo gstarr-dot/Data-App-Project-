@@ -58,7 +58,12 @@ if page == "Home":
                 f"{expense['category']} | "
                 f"${expense['amount']}"
             )
+            
             if st.button(f"Delete Entry {i}"):
+                data.pop(i)
+                save_data(data)
+                st.success("Entry Deleted")
+                st.rerun()
                 
     else:
         st.write("No spending data available.")
