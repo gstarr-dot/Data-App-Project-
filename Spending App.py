@@ -68,7 +68,7 @@ if page == "Home":
         ["All"] + list(df["category"].unique())
         )
 
-        min_amount = st.slider(    
+        min_amount = st.slider(       #slider that shows purchases more than selected value 
             "Minimum Amount ($)",
             0.0, 
             float(df["amount"].max()),
