@@ -88,7 +88,7 @@ if page == "Home":
         ]
 
         #display data with filter
-        filtered_df["amount"]
+        filtered_df["amount"] = filtered_df["amount"].apply(
         st.dataframe(filtered_df)
 
         #Budget Tracker 
