@@ -9,3 +9,6 @@ Features:
 - Delete individual entries 
 
 How to Run the App: \
+-Install dependencies: pip install streamlit pandas metplotlib
+
+  
