@@ -145,7 +145,7 @@ elif page == "Charts":
         #Bar chart 
         if chart_type == "Bar Chart":
             st.subheader("Bar Chart for Spending by Category")
-            st.bar_chart(category_totals)
+            
 
         #Pie Chart
         elif chart_type == "Pie Chart":
