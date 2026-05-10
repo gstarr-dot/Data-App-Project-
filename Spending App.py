@@ -160,7 +160,7 @@ elif page == "Charts":
 
             ax.axis("equal")
 
-            st.pyplot(fig)
+            st.pyplot(fig) 
                    
                       
                       
