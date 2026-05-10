@@ -94,7 +94,7 @@ if page == "Home":
         st.subheader("Budget Tracker")
 
         budget = st.number_input(
-            "Set Monthly Budget",
+            "Set Monthly Budget ($)",
             min_value=0.0,
             step=10.0
         )
