@@ -70,6 +70,8 @@ if page == "Home":
 
         st.info(f"You spent a total of ${total_spent:.2f}")
         st.success(f"Top category: {top_category} (${top_category_value:.2f})")
+        st.warning(
+            f"Most expensive purchase: {most_expensive['category']} "
         
         #Filters for Spendings 
         st.subheader("Filters")
