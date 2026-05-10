@@ -148,7 +148,9 @@ elif page == "Charts":
 
             fig, ax = plt.subplots(figsize =(8,5))
             ax.bar(category_totals.index, category_totals.values)
-            ax.set_xlabel(:Category", fontsize=12, labelpad=10)
+            ax.set_xlabel(Category", fontsize=12, labelpad=10)
+            ax.set_ylabel("Amount Spent ($), fontsize=12, labelpad=10)
+            
 
         #Pie Chart
         elif chart_type == "Pie Chart":
