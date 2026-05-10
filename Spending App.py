@@ -72,6 +72,8 @@ if page == "Home":
         st.success(f"Top category: {top_category} (${top_category_value:.2f})")
         st.warning(
             f"Most expensive purchase: {most_expensive['category']} "
+            f"on {most_expensive['date']} for ${most_expensive['amount']:.2f}"
+        )
         
         #Filters for Spendings 
         st.subheader("Filters")
