@@ -3,4 +3,5 @@ This is a Streamlit-based personal finance tracker that allows users to log, fil
 
 Features: 
 - Add expenses with amount, category, and date
-- Filter spending by category and minimum amount 
+- Filter spending by category and minimum amount
+- View spending history in a table 
