@@ -66,6 +66,7 @@ if page == "Home":
         total_spent = df["amount"].sum()
         avg_spent = df["amount"].mean()
         top_category = df.groupby("categroy")["amount"].sum().max()
+        most_expensive = df.loc[df["amount"].idmax()]
         
         #Filters for Spendings 
         st.subheader("Filters")
