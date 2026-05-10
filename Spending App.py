@@ -64,6 +64,7 @@ if page == "Home":
         #Spending Insights 
         st.subheader("Insights")
         total_spent = df["amount"].sum()
+        avg_spent = df["amount"].mean()
         
         #Filters for Spendings 
         st.subheader("Filters")
