@@ -153,8 +153,8 @@ elif page == "Charts":
             ax.set_title("Spending by Category", fontsize=12)
             plt.xticks(rotation=30, ha="right")
             ax.grid(axis="y", linestyle="--", alpha=0.4)
-            ax.spines["top"].set_visable(False)
-            ax.spines["right"].set_visable(False)
+            ax.spines["top"].set_visible(False)
+            ax.spines["right"].set_visible(False)
             st.pyplot(fig)
             
 
