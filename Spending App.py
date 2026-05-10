@@ -65,7 +65,7 @@ if page == "Home":
         st.subheader("Insights")
         total_spent = df["amount"].sum()
         avg_spent = df["amount"].mean()
-        top_category = df.groupby("category")["amount"].sum().max()
+        top_category = df.groupby("category")["amount"].sum().idxmax()
         most_expensive = df.loc[df["amount"].idxmax()]
         category_totals = df.groupby("category")["amount"].sum()
         top_category_value = df.groupby("category")["amount"].sum().max()
