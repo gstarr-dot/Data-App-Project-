@@ -63,6 +63,7 @@ if page == "Home":
         df = pd.DataFrame(data)
         #Spending Insights 
         st.subheader("Insights")
+        total_spent = df["amount"].sum()
         
         #Filters for Spendings 
         st.subheader("Filters")
