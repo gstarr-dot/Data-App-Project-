@@ -7,3 +7,5 @@ Features:
 - View spending history in a table
 - Track budget usage with a progress bar
 - Delete individual entries 
+
+How to Run the App: \
