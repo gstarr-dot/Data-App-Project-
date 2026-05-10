@@ -147,6 +147,7 @@ elif page == "Charts":
             st.subheader("Bar Chart for Spending by Category")
 
             fig, ax = plt.subplots(figsize =(8,5))
+            ax.bar(category_totals.index, category_totals.values)
             
 
         #Pie Chart
