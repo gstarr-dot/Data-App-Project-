@@ -89,6 +89,8 @@ if page == "Home":
 
         #display data with filter
         filtered_df["amount"] = filtered_df["amount"].apply(
+            lamba x: f"$(x:.2f)"
+        )
         st.dataframe(filtered_df)
 
         #Budget Tracker 
