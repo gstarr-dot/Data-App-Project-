@@ -11,6 +11,6 @@ Features:
 How to Run the App: \
 -Install dependencies: pip install streamlit pandas metplotlib
 
--Run the app: 
+-Run the app: py -m streamlit run "Spending App.py"
 
   
