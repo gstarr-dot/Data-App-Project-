@@ -4,6 +4,8 @@ import os
 import pandas as pd 
 import matplotlib.pyplot as plt 
 
+st.set_page_config(
+
 File = "spending.json"
 
 def load_data():  #loads saved spending data 
