@@ -89,7 +89,7 @@ if page == "Home":
 
         #display data with filter
         filtered_df["amount"] = filtered_df["amount"].apply(
-            lambda x: f"$(x:.2f)"             #takes value with 2 decimal places
+            lambda x: f"${x:.2f}"             #takes value with 2 decimal places
         )
         st.dataframe(filtered_df)
 
