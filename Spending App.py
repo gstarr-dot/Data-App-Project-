@@ -150,6 +150,7 @@ elif page == "Charts":
             ax.bar(category_totals.index, category_totals.values)
             ax.set_xlabel(Category", fontsize=12, labelpad=10)
             ax.set_ylabel("Amount Spent ($), fontsize=12, labelpad=10)
+            ax.set_title("Spending by Category", fontsize=14, pad=15)
             
 
         #Pie Chart
