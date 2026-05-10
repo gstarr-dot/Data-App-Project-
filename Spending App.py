@@ -152,6 +152,10 @@ elif page == "Charts":
             ax.set_ylabel("Amount Spent ($), fontsize=12, labelpad=10)
             ax.set_title("Spending by Category", fontsize=14, pad=15)
             plt.xticks(rotation=30, ha="right")
+            ax.grid(axis="y", linestyle="--", alpha=0.4)
+            ax.spines["top"].set_visable(False)
+            ax.spines["right"].set_visable(False)
+            st.pyplot(fig)
             
 
         #Pie Chart
