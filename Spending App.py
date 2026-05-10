@@ -61,6 +61,7 @@ if page == "Home":
 
     if data:
         df = pd.DataFrame(data)
+        #Spending Insights 
         st.subheader("Filters")
         
         selected_category = st.selectbox(
