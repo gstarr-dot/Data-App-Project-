@@ -69,6 +69,7 @@ if page == "Home":
         most_expensive = df.loc[df["amount"].idmax()]
 
         st.info(f"You spent a total of ${total_spent:.2f}")
+        st.success(f"Top category: {top_category} (${top_category_value:.2f})")
         
         #Filters for Spendings 
         st.subheader("Filters")
