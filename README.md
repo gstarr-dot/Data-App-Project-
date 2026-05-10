@@ -14,6 +14,7 @@ How to Run the App: \
 -Run the app: py -m streamlit run "Spending App.py"
 
 Future Improvements: 
-- Add login system 
+- Add login system
+- Make categories more specific 
 
   
