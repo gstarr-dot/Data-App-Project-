@@ -10,7 +10,7 @@ How to Run the App: \
 
 Features: 
 - Add expenses with amount, category, and date
-- Data is saved locally using JSON file, and the app reads, displays, filters, and updates entries. 
+- Data is saved to the JSON file, and the app reads, displays, filters, and updates entries. 
 - Automatically generates spending insights such as total spending, top spending category, and the most expensive purchase. 
 - Filter spending by category and minimum amount
 - View spending history in a table
