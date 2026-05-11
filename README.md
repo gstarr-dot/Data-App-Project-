@@ -3,6 +3,7 @@ This is a Streamlit-based personal finance tracker that allows users to log, fil
 
 How to Run the App: \
 -Install dependencies: pip install streamlit pandas matplotlib \
+  pandas for organizing, filtering, and analyzing spending data. 
   matplotlib for the bar and pie charts
 
 -In the terminal: py -m streamlit run "Spending App.py"
