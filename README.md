@@ -15,11 +15,11 @@ Features:
 - Filter spending by category and minimum amount
 - View spending history in a table
 - Track budget 
-- Delete individual entries 
+- Delete individual entries
 
 
 Future Improvements: 
-- Add login system
+- Add a login system
 - Make categories more specific
 - Monthly Spending Breakdowns 
 
