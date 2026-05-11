@@ -13,7 +13,7 @@ Features:
 - Data is saved to the JSON file, and the app reads, displays, filters, and updates entries. 
 - Automatically generates spending insights such as total spending, top spending category, and the most expensive purchase. 
 - Filter spending by category and minimum amount
-- View spending history in a table
+- View spending history in a table, bar chart, and pie chart. 
 - Track budget 
 - Delete individual entries
 
